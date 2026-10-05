@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="MKV Mecânica Automotiva em Canoas/RS: manutenção de motor, freios, suspensão e troca de óleo com diagnóstico preciso e atendimento transparente."
+    >
+
+    <title>MKV Mecânica Automotiva</title>
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Eczar:wght@700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- Ícones e JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"
+        defer
+    ></script>
+
+    <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+    <a class="pular-conteudo" href="#conteudo">
+        Pular para o conteúdo
+    </a>
+
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="container cabecalho-container">
+            <a
+                class="cabecalho-marca"
+                href="#inicio"
+                aria-label="MKV Mecânica Automotiva — início"
+            >
+                <img
+                    src="./assets/logo.png"
+                    alt="MKV Mecânica Automotiva"
+                    class="cabecalho-logo"
+                >
+            </a>
+
+            <button
+                class="cabecalho-menu"
+                type="button"
+                aria-controls="menu-principal"
+                aria-expanded="false"
+                aria-label="Abrir menu"
+                hidden
+            >
+                <span
+                    class="cabecalho-menu-linha"
+                    aria-hidden="true"
+                ></span>
+
+                <span
+                    class="cabecalho-menu-linha"
+                    aria-hidden="true"
+                ></span>
+
+                <span
+                    class="cabecalho-menu-linha"
+                    aria-hidden="true"
+                ></span>
+            </button>
+
+            <nav
+                id="menu-principal"
+                class="cabecalho-links"
+                aria-label="Navegação principal"
+            >
+                <a href="#servicos">Serviços</a>
+                <a href="#sobre-nos">Sobre nós</a>
+                <a href="#avaliacoes">Avaliações</a>
+                <a href="#localizacao">Localização</a>
+            </nav>
+
+            <a
+                href="https://wa.me/5551998513906"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="botao botao-contato"
+            >
+                Fale Conosco
+            </a>
+        </div>
+    </header>
+
+    <main id="conteudo" tabindex="-1">
+        <!-- Apresentação -->
+        <section
+            id="inicio"
+            class="apresentacao"
+            aria-labelledby="titulo-apresentacao"
+        >
+            <img
+                src="./img/8.jpg"
+                alt=""
+                class="apresentacao-fundo"
+                fetchpriority="high"
+            >
+
+            <div
+                class="apresentacao-sobreposicao"
+                aria-hidden="true"
+            ></div>
+
+            <div class="container apresentacao-container">
+                <div class="apresentacao-texto">
+                    <h1 id="titulo-apresentacao">
+                        Cuidamos do seu carro como se fosse nosso!
+                    </h1>
+
+                    <p>
+                        Mecânica geral com diagnóstico preciso e atendimento
+                        transparente. Motor, freios, suspensão e muito mais.
+                    </p>
+
+                    <a
+                        href="https://wa.me/5551998513906"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="botao botao-orcamento"
+                    >
+                        Solicitar Orçamento
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Características -->
+        <section
+            class="caracteristicas"
+            aria-label="Diferenciais da MKV"
+        >
+            <div class="container">
+                <ul class="caracteristicas-grid">
+                    <li class="caracteristicas-item">
+                        <i
+                            data-lucide="search-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <p>Diagnóstico</p>
+                    </li>
+
+                    <li class="caracteristicas-item">
+                        <i
+                            data-lucide="shield-check"
+                            aria-hidden="true"
+                        ></i>
+
+                        <p>Peças de Qualidade</p>
+                    </li>
+
+                    <li class="caracteristicas-item">
+                        <i
+                            data-lucide="heart-handshake"
+                            aria-hidden="true"
+                        ></i>
+
+                        <p>Garantia de Serviço</p>
+                    </li>
+
+                    <li class="caracteristicas-item">
+                        <i
+                            data-lucide="clock"
+                            aria-hidden="true"
+                        ></i>
+
+                        <p>Atendimento Ágil</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Serviços -->
+        <section
+            id="servicos"
+            class="servicos"
+            aria-labelledby="titulo-servicos"
+        >
+            <div class="container">
+                <h2 id="titulo-servicos" class="secao-titulo">
+                    Nossos Serviços
+                </h2>
+
+                <p class="secao-subtitulo">
+                    Use os controles para assistir aos vídeos. No computador,
+                    passe o mouse sobre os cards para visualizar o serviço.
+                </p>
+
+                <div class="servicos-grid">
+                    <!-- Motor -->
+                    <article class="servico-card">
+                        <div class="servico-midia">
+                            <video
+                                muted
+                                loop
+                                preload="metadata"
+                                playsinline
+                                class="servico-video"
+                                aria-label="Vídeo do serviço de motor"
+                            >
+                                <source
+                                    src="./videos/motor.mp4"
+                                    type="video/mp4"
+                                >
+
+                                Seu navegador não suporta vídeos HTML5.
+                            </video>
+                        </div>
+
+                        <div class="servico-conteudo">
+                            <h3>Motor</h3>
+
+                            <p>
+                                Retífica, manutenção e diagnóstico completo
+                                do motor.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Freios -->
+                    <article class="servico-card">
+                        <div class="servico-midia">
+                            <video
+                                muted
+                                loop
+                                preload="metadata"
+                                playsinline
+                                class="servico-video"
+                                aria-label="Vídeo do serviço de freios"
+                            >
+                                <source
+                                    src="./videos/freios.mp4"
+                                    type="video/mp4"
+                                >
+
+                                Seu navegador não suporta vídeos HTML5.
+                            </video>
+                        </div>
+
+                        <div class="servico-conteudo">
+                            <h3>Freios</h3>
+
+                            <p>
+                                Pastilhas, discos e manutenção completa
+                                do sistema.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Suspensão -->
+                    <article class="servico-card">
+                        <div class="servico-midia">
+                            <video
+                                muted
+                                loop
+                                preload="metadata"
+                                playsinline
+                                class="servico-video"
+                                aria-label="Vídeo do serviço de suspensão"
+                            >
+                                <source
+                                    src="./videos/suspensao.mp4"
+                                    type="video/mp4"
+                                >
+
+                                Seu navegador não suporta vídeos HTML5.
+                            </video>
+                        </div>
+
+                        <div class="servico-conteudo">
+                            <h3>Suspensão</h3>
+
+                            <p>
+                                Alinhamento, amortecedores, pivôs e estabilidade.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Troca de óleo -->
+                    <article class="servico-card">
+                        <div class="servico-midia">
+                            <video
+                                muted
+                                loop
+                                preload="metadata"
+                                playsinline
+                                class="servico-video"
+                                aria-label="Vídeo do serviço de troca de óleo"
+                            >
+                                <source
+                                    src="./videos/oleo.mp4"
+                                    type="video/mp4"
+                                >
+
+                                Seu navegador não suporta vídeos HTML5.
+                            </video>
+                        </div>
+
+                        <div class="servico-conteudo">
+                            <h3>Troca de Óleo</h3>
+
+                            <p>
+                                Óleo e filtros premium para máxima proteção
+                                do motor.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre nós -->
+        <section
+            id="sobre-nos"
+            class="sobre-nos"
+            aria-labelledby="titulo-sobre-nos"
+        >
+            <div class="container sobre-nos-grid">
+                <div class="sobre-nos-imagem">
+                    <img
+                        src="./img/LocalMecânica.jpg"
+                        alt="Instalações da MKV Mecânica Automotiva"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </div>
+
+                <div class="sobre-nos-conteudo">
+                    <span class="sobre-nos-etiqueta">
+                        Sobre a MKV
+                    </span>
+
+                    <h2 id="titulo-sobre-nos">
+                        Experiência, confiança e compromisso com seu veículo
+                    </h2>
+
+                    <p>
+                        A MKV Mecânica Automotiva atua oferecendo serviços
+                        de manutenção com transparência, qualidade e atenção
+                        aos detalhes.
+                    </p>
+
+                    <p>
+                        Trabalhamos com diagnóstico preciso, peças de qualidade
+                        e mão de obra especializada para garantir segurança
+                        e tranquilidade aos nossos clientes.
+                    </p>
+
+                    <ul class="sobre-nos-destaques">
+                        <li>
+                            <strong>+10</strong>
+                            <span>Anos de experiência</span>
+                        </li>
+
+                        <li>
+                            <strong>+1000</strong>
+                            <span>Clientes atendidos</span>
+                        </li>
+
+                        <li>
+                            <strong>100%</strong>
+                            <span>Compromisso</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Avaliações -->
+        <section
+            id="avaliacoes"
+            class="avaliacoes"
+            aria-labelledby="titulo-avaliacoes"
+        >
+            <div class="container">
+                <h2 id="titulo-avaliacoes" class="secao-titulo">
+                    O que nossos clientes dizem
+                </h2>
+
+                <p class="secao-subtitulo">
+                    A confiança dos nossos clientes é o combustível que nos move.
+                </p>
+
+                <div class="avaliacoes-grid">
+                    <figure class="avaliacao-card">
+                        <div
+                            class="avaliacao-estrelas"
+                            role="img"
+                            aria-label="5 de 5 estrelas"
+                        >
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            <p>
+                                “Excelente atendimento! Resolveram o problema
+                                do meu carro rápido e com preço justo.”
+                            </p>
+                        </blockquote>
+
+                        <figcaption>— Carlos M.</figcaption>
+                    </figure>
+
+                    <figure class="avaliacao-card">
+                        <div
+                            class="avaliacao-estrelas"
+                            role="img"
+                            aria-label="5 de 5 estrelas"
+                        >
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            <p>
+                                “Profissionais de confiança. Serviço de qualidade
+                                e honestidade.”
+                            </p>
+                        </blockquote>
+
+                        <figcaption>— Fernanda S.</figcaption>
+                    </figure>
+
+                    <figure class="avaliacao-card">
+                        <div
+                            class="avaliacao-estrelas"
+                            role="img"
+                            aria-label="5 de 5 estrelas"
+                        >
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            <p>
+                                “Troquei a suspensão completa e ficou perfeito.”
+                            </p>
+                        </blockquote>
+
+                        <figcaption>— Roberto L.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chamada para contato -->
+        <section
+            class="chamada"
+            aria-labelledby="titulo-chamada"
+        >
+            <div class="container chamada-conteudo">
+                <div class="chamada-texto">
+                    <h2 id="titulo-chamada">
+                        Precisa de ajuda com seu carro?
+                    </h2>
+
+                    <p>
+                        Fale agora com nossos especialistas e solicite um orçamento.
+                    </p>
+                </div>
+
+                <a
+                    href="https://wa.me/5551998513906"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="botao botao-claro"
+                >
+                    Chamar no WhatsApp
+                </a>
+            </div>
+        </section>
+
+        <!-- Localização -->
+        <section
+            id="localizacao"
+            class="localizacao"
+            aria-labelledby="titulo-localizacao"
+        >
+            <div class="container">
+                <h2 id="titulo-localizacao" class="secao-titulo">
+                    Onde <span>estamos</span>
+                </h2>
+
+                <p class="secao-subtitulo">
+                    Venha nos visitar ou entre em contato. Estamos prontos
+                    para cuidar do seu veículo.
+                </p>
+
+                <div class="localizacao-grid">
+                    <div class="localizacao-mapa">
+                        <iframe
+                            src="https://www.google.com/maps?q=Av.%20A.J.%20Renner,%201437%20Canoas%20RS&amp;output=embed"
+                            title="Localização da MKV Mecânica Automotiva em Canoas/RS"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                    </div>
+
+                    <div class="localizacao-card">
+                        <p class="localizacao-etiqueta">
+                            Fale com a MKV
+                        </p>
+
+                        <h3 class="localizacao-titulo">
+                            Informações de <span>contato</span>
+                        </h3>
+
+                        <!-- Endereço -->
+                        <div class="localizacao-item">
+                            <div class="localizacao-icone">
+                                <i
+                                    data-lucide="map-pin"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+
+                            <div class="localizacao-dados">
+                                <h4>Endereço</h4>
+
+                                <address>
+                                    Av. A.J. Renner, 1437<br>
+                                    Canoas/RS
+                                </address>
+                            </div>
+                        </div>
+
+                        <!-- Telefone -->
+                        <div class="localizacao-item">
+                            <div class="localizacao-icone">
+                                <i
+                                    data-lucide="phone"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+
+                            <div class="localizacao-dados">
+                                <h4>Telefone</h4>
+
+                                <a href="tel:+5551998513906">
+                                    (51) 99851-3906
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- E-mail -->
+                        <div class="localizacao-item">
+                            <div class="localizacao-icone">
+                                <i
+                                    data-lucide="mail"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+
+                            <div class="localizacao-dados">
+                                <h4>E-mail</h4>
+
+                                <a href="mailto:contato@mkvmecanica.com.br">
+                                    contato@mkvmecanica.com.br
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Horários -->
+                        <div class="localizacao-item">
+                            <div class="localizacao-icone">
+                                <i
+                                    data-lucide="clock"
+                                    aria-hidden="true"
+                                ></i>
+                            </div>
+
+                            <div class="localizacao-dados horario-grid">
+                                <div>
+                                    <h4>Atendimento</h4>
+
+                                    <p>Segunda a Sexta:</p>
+                                    <p>08h às 12h | 14h às 18h</p>
+
+                                    <p class="horario-sabado">Sábados:</p>
+                                    <p>08h às 12h</p>
+                                </div>
+
+                                <div>
+                                    <h4>Fechado</h4>
+
+                                    <p>Domingos</p>
+                                    <p>Feriados</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a
+                            href="https://wa.me/5551998513906"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="botao botao-localizacao"
+                        >
+                            Fale Conosco Agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+            <div class="rodape-informacoes">
+                <a
+                    href="#inicio"
+                    aria-label="MKV Mecânica Automotiva — início"
+                >
+                    <img
+                        src="./assets/logo.png"
+                        alt="MKV Mecânica Automotiva"
+                        loading="lazy"
+                        decoding="async"
+                    >
+                </a>
+
+                <p>
+                    Mecânica especializada com atendimento transparente,
+                    diagnóstico preciso e compromisso com a qualidade.
+                </p>
+            </div>
+
+            <nav
+                class="rodape-links"
+                aria-label="Navegação do rodapé"
+            >
+                <h2>Links</h2>
+
+                <a href="#servicos">Serviços</a>
+                <a href="#sobre-nos">Sobre nós</a>
+                <a href="#avaliacoes">Avaliações</a>
+                <a href="#localizacao">Localização</a>
+            </nav>
+
+            <div class="rodape-contato">
+                <h2>Contato</h2>
+
+                <address>
+                    <p>Av. A.J. Renner, 1437</p>
+                    <p>Canoas/RS</p>
+
+                    <a href="tel:+5551998513906">
+                        (51) 99851-3906
+                    </a>
+
+                    <a href="mailto:contato@mkvmecanica.com.br">
+                        contato@mkvmecanica.com.br
+                    </a>
+                </address>
+            </div>
+        </div>
+
+        <div class="rodape-base">
+            © <span id="ano-atual">2026</span>
+            MKV Mecânica Automotiva — Todos os direitos reservados.
+        </div>
+    </footer>
+</body>
+</html>
